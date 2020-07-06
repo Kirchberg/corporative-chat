@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t('chatrooms main page label') %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t('channel name main page')%>:</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chatrooms.each do |chatroom| %>
+      <tr>
+        <td style = 'font-size: 20px;'><kbd><%= chatroom.name %></kbd></td>
+        <td><%= button_to t('join chat main page'), chatroom_chatroom_users_path(chatroom), method: :post, class: "btn btn-default", id: "form-buttons" %></td>
+        <td><%= button_to t('leave chat main page'), chatroom_chatroom_users_path(chatroom), method: :delete, class: "btn btn-default", id: "form-buttons" %></td>
+      </tr>
+      <tr class="blank_row">
+        <td colspan="3"></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= button_to t('new chatroom main page'), new_chatroom_path, method: :get, class: "btn btn-default" %>

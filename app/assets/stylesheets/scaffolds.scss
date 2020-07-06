@@ -1,0 +1,23 @@
+#form-buttons {
+  margin-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#text-content {
+  margin-top: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+  overflow: scroll;
+}
+
+.blank_row
+{
+    height: 10px !important; /* overwrites any other rules */
+    background-color: #FFFFFF;
+}
+
+#chat-text {
+  font-size: 15px;
+  margin-top: 15px;
+}

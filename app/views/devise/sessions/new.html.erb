@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-4">
+    <%= devise_error_messages! %>
+      <% flash.each do |key, value| %>
+         <div class="alert alert-info" <%= key %>"><div class="text-center"><%= value %></div></div>
+      <% end %>
+    <h1 class="text-center"><%= t('log in label') %></h1>
+    <hr>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="form-group">
+        <%= f.email_field :email, autofocus: true, placeholder: t('email address log in'), class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.password_field :password, autocomplete: "off", placeholder: t('password log in'), class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+          <%= f.submit t("log in button"), class: "btn btn-primary btn-block btn-lg" %>
+      </div>
+    <% end %>
+    </div>
+</div>

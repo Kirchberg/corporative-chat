@@ -1,0 +1,5 @@
+<h1><%= t('create chatroom second page') %></h1>
+
+<%= render 'form', chatroom: @chatroom %>
+<br>
+<%= button_to t('create chatroom back button'), chatrooms_path, method: :get, class: "btn btn-default" %>

@@ -1,0 +1,24 @@
+<div style = 'font-size: 25px;'>
+  <p>
+    <strong><%= t('chat name message') %>:</strong>
+    <%= @chatroom.name %>
+  </p>
+</div>
+
+<div data-behavior='messages' data-chatroom-id='<%= @chatroom.id %>'>
+  <% @messages.each do |message|%>
+    <%= render message %>
+  <% end %>
+</div>
+
+<div class="form-group">
+  <%= form_for [@chatroom, Message.new], class: "m-t" do |f| %>
+    <div id = 'text-content'>
+      <%= f.text_area :body, rows: 1, class: 'form-control', autofocus: true %>
+    </div>
+    <div>
+      <%= f.button t("create message message"), class: "btn btn-default" %>
+      <%= link_to t('back button message'), chatrooms_path, method: :get, class: "btn btn-default", style: 'margin-left: 5px;' %>
+    </div>
+  <% end %>
+</div>
