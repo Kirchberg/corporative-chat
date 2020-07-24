@@ -3,4 +3,5 @@
 This project was made for BMSTU because of my studies at the University in the direction of applied Informatics. 
 * Idea: Make a corporate chat for University employees so that they can contact students during their studies. 
 
-If someone sees this message, please give feedback about my work!
+To run it you need to have a Ruby and Ruby on Rails.
+Ruby version: 2.5.3
