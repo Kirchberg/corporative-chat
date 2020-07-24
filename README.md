@@ -1,24 +1,6 @@
 # About project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was made for BMSTU because of my studies at the University in the direction of applied Informatics. 
+* Idea: Make a corporate chat for University employees so that they can contact students during their studies. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If someone sees this message, please give feedback about my work!
